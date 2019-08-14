@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityAnimation_background">
+
+    <TextView
+        android:id="@+id/activityAnimation_textView_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Your Progress"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activityAnimation_textView_progressDetails"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="It will help you to study harder everyday you liked to"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityAnimation_textView_progress" />
+
+    <ImageView
+        android:id="@+id/activityAnimation_imageView_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="Android Jetpack"
+        android:src="@drawable/android_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityAnimation_textView_progressDetails" />
+
+    <TextView
+        android:id="@+id/activityAnimation_textView_set1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="32      News"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/activityAnimation_textView_set2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityAnimation_imageView_image" />
+
+    <TextView
+        android:id="@+id/activityAnimation_textView_set2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="24      Videos"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activityAnimation_textView_set1"
+        app:layout_constraintEnd_toStartOf="@+id/activityAnimation_textView_set3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/activityAnimation_textView_set1" />
+
+    <TextView
+        android:id="@+id/activityAnimation_textView_set3"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="64   Images"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activityAnimation_textView_set2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/activityAnimation_textView_set2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background_v1"
+        android:text="Next Course"
+        android:textAllCaps="false"
+        android:textColor="@color/button_color_v1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityAnimation_textView_set1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
